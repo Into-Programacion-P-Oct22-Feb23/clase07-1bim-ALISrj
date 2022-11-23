@@ -29,11 +29,11 @@ public class Ejemplo06 {
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
         // true 
-        while (bandera) {
+        while (bandera == true) {
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
-            if (calificacion > 20) {
+            if (calificacion > 20) { // Se usa el condiciona, como control, es un sistema donde la nota max es 20, por lo tanto, este control evita, que se presenten numeros mayores al maximo
                 calificacion = 20;
             }
             suma_total = suma_total + calificacion;

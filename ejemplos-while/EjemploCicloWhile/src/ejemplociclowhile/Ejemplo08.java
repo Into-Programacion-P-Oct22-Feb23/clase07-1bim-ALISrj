@@ -34,7 +34,7 @@ public class Ejemplo08 {
             System.out.println("Ingrese calificación:");
             calificacion = entrada.nextDouble();
             suma_total = suma_total + calificacion;
-            contador = contador + 1;
+            contador = contador + 1; // Se usa el contador para saber cuantas veces entra el usuario al ciclo y poder obtener el divisor del promedio.
 
             entrada.nextLine(); // Ojo usamos el limpiador del scanner (buffer)
 
@@ -42,7 +42,7 @@ public class Ejemplo08 {
             System.out.println("Ingrese si para salir");
             String temporal = entrada.nextLine();
             if (temporal.equals("si")) {
-                bandera = false;
+                bandera = false; 
             }
         }
         promedio_final = suma_total / contador;
